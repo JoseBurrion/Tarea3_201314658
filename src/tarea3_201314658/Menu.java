@@ -22,7 +22,9 @@ public class Menu {
     public void menu1(){
         
         do{
+            
             System.out.println("Tarea 3");
+            System.out.println(" ");
             System.out.println("201314658");
             System.out.println(" ");
             System.out.println("1. Usuarios");
@@ -53,7 +55,7 @@ public class Menu {
         int o;
         
         do{
-            System.out.println("Menur de Usuarios");
+            System.out.println("Menu de Usuarios");
             System.out.println("");
             System.out.println("1. ingresar suarios");
             System.out.println("2. Mostrar todos los usuarios");
@@ -90,10 +92,16 @@ public class Menu {
         
         String palabra, palabraInvertida;
         int x;
+        
+        System.out.println("Palabras palindromas");
+        System.out.println("");
+        System.out.println("Ingresar palabra");
         palabra = leer.next();
         palabraInvertida = "";
         
-        for(x=0; x < palabra.length(); x++){
+        System.out.println("");
+        
+        for(x=(palabra.length()-1); x>=0; x--){
             palabraInvertida = palabraInvertida + palabra.charAt(x);
         }
         
@@ -103,6 +111,7 @@ public class Menu {
             System.out.println("La palabra no es palindroma");
         }
     }
+    
 
     private void ingresar() {
          
