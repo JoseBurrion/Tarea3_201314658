@@ -12,7 +12,6 @@ import java.util.Scanner;
  */
 public class Menu {
     Scanner leer;
-    int opcion;
     static String[] usuario;
     
     public Menu(){
@@ -20,7 +19,7 @@ public class Menu {
         usuario= new String[5];
 }
     public void menu1(){
-        
+        int opcion;
         do{
             
             System.out.println("Tarea 3");
@@ -127,6 +126,7 @@ public class Menu {
     private void mostrar() {
         
         System.out.println("Mostrar todos los usuarios");
+        System.out.println("");
         int posicion;
         
         for(posicion=0; posicion < usuario.length; posicion++){
@@ -141,6 +141,7 @@ public class Menu {
         int aux=0;
         
         System.out.println("Mostrar ususario personalizado");
+        System.out.println("");
         System.out.println("Ingresar Usuario");
         usuarioP=leer.next();
         
