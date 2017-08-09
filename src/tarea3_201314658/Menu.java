@@ -88,6 +88,20 @@ public class Menu {
 
     private void palabras() {
         
+        String palabra, palabraInvertida;
+        int x;
+        palabra = leer.next();
+        palabraInvertida = "";
+        
+        for(x=0; x < palabra.length(); x++){
+            palabraInvertida = palabraInvertida + palabra.charAt(x);
+        }
+        
+        if (palabra.equals(palabraInvertida)){
+            System.out.println("La palabra es palindroma");
+        }else{
+            System.out.println("La palabra no es palindroma");
+        }
     }
 
     private void ingresar() {
